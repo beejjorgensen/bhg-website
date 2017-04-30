@@ -1,5 +1,5 @@
-#cal-copy {
-	margin: 0em 3% 1em 3%;
+#page-cal {
+	margin: 0 3% 0 3%;
 	text-align: center;
 }
 
@@ -8,5 +8,6 @@
 }
 
 #cal-cal > iframe {
+	margin-top: 2em;
 	max-width: 100%
 }

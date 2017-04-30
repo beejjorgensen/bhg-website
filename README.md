@@ -1,7 +1,6 @@
 # Bend Hackers Guild Website
 
 ## TODO
-* Convert nav page to pageref and autoconnect to handler
 * Main page
 	* Library
 	* Meetup
