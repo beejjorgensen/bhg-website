@@ -54,6 +54,11 @@ table {
 
 /* Thanks for this awesome font * http://www.kreativekorp.com/software/fonts/c64.shtml */
 
+body {
+	background-image: url('../img/scanlines.png');
+	background-attachment: fixed;
+}
+
 @font-face {
     font-family: 'PetMe64Medium';
     src: url('../fonts/petme64-webfont.eot');
@@ -71,8 +76,13 @@ table {
 }
 
 #header {
+	margin-top: 2em;
+	text-align: center;
 	font-family: "PetMe64Medium", monospace;
 	text-transform: uppercase;
+	color: rgba(0,255,0,0.8);
+	font-size: 2em;
+	text-shadow: 0 0 1.3em;
 }
 
 #loading {
