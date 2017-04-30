@@ -66,13 +66,18 @@
 	 * Shows an already-cached page
 	 */
 	function showPage(page) {
+		let title;
+
 		for (let p of qs('#content').querySelectorAll('.page')) {
 			if (p.id == page) {
+				title = p.getAttribute('data-title');
 				p.classList.remove('hidden');
 			} else {
 				p.classList.add('hidden');
 			}
 		}
+
+		history.replaceState({}, title, '#' + page);
 	}
 
 	/**
@@ -122,6 +127,33 @@
 	}
 
 	/**
+	 * Show the initial page (maybe based on URL)
+	 */
+	function showInitialPage() {
+		// Find the hash part of the current URL
+		// https://gist.github.com/jlong/2428561
+		let a = document.createElement('a');
+		a.href = window.location.href;
+		let hash = a.hash;
+
+		let page;
+
+		if (hash && hash !== '') {
+			page = hash.substr(1);
+
+			// Verify this page exists, else redirect to main
+			if (!qs('#content > div#' + page + ".page")) {
+				page = 'page-main';
+			}
+		} else {
+			page = 'page-main';
+		}
+
+
+		showOrCache(page);
+	}
+
+	/**
 	 * On DOM ready
 	 */
 	function onReady() {
@@ -133,7 +165,7 @@
 			button.addEventListener('click', onNavClick);
 		}
 
-		showOrCache('page-main');
+		showInitialPage();
 	}
 
 	window.addEventListener('DOMContentLoaded', onReady);
