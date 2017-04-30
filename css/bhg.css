@@ -57,7 +57,7 @@ table {
 body {
 	background-image: url('../img/scanlines.png');
 	background-attachment: fixed;
-	font-family: "Ubuntu Mono", monospace;
+	font-family: "Roboto Mono", monospace;
 	color: rgba(0,255,0,0.8);
 }
 
@@ -78,8 +78,12 @@ body {
 }
 
 .font64 {
-	font-family: "PetMe64Medium", "Ubuntu Mono", monospace;
+	font-family: "PetMe64Medium", "Roboto Mono", monospace;
 	text-transform: uppercase;
+}
+
+.hide-whitespace {
+	font-size: 0;
 }
 
 a:link, a:visited {
@@ -106,15 +110,19 @@ a:active, a:hover {
 }
 
 #loading {
-	font-family: "PetMe64Medium", monospace;
 	text-transform: uppercase;
 }
 
+#content {
+	margin-top: 2.5em;
+}
+
 #nav {
-	margin-top: 0.8em;
+	margin-top: 2em;
 	text-align: center;
-	font-size: 2em;
-	font-weight: bold;
+	font-size: 1.3em;
+	line-height: 1.1em;
+	font-family: "PetMe64Medium", "Roboto Mono", monospace;
 }
 
 #nav a:link, #nav a:visited {
