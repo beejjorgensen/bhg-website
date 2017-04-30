@@ -59,6 +59,7 @@ body {
 	background-attachment: fixed;
 	font-family: "Roboto Mono", monospace;
 	color: rgba(0,255,0,0.8);
+	overflow-y: scroll; /* force scrollbar on */
 }
 
 @font-face {

@@ -1,0 +1,13 @@
+#page-main {
+	margin: 0 3% 0 3%;
+	text-align: center;
+}
+
+#page-main-inner {
+	text-align: left;
+	max-width: 52em; /* Osborne 1! Represent! */
+	/*
+	border: 1px solid white;
+	*/
+	display: inline-block;
+}
