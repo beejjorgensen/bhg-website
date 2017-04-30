@@ -39,17 +39,21 @@
 		let pelem = qs('#' + page);
 
 		function stateChange() {
+			let nextPage;
+
 			if (xhr.readyState === XMLHttpRequest.DONE) {
 				if (xhr.status === 200) {
 					pageCached[page] = true;
 					pelem.innerHTML = xhr.responseText;
-					showPage(page);
+					addNavClickHandlers(pelem);
+					nextPage = page;
 
 				} else {
 					alert("Error loading page " + page + ": " + xhr.status + " " + xhr.statusText);
-					showPage(MAINPAGE);
+					nextPage = MAINPAGE;
 				}
 
+				showPage(page);
 				showLoading(false);
 			}
 		}
@@ -91,7 +95,7 @@
 	 */
 	function highlightNav(page) {
 		for (let a of qs('#nav').querySelectorAll('a')) {
-			let pageRef = a.getAttribute('data-page');
+			let pageRef = a.getAttribute('href').substr(1);
 
 			if (pageRef == page) {
 				a.classList.add('current');
@@ -115,19 +119,34 @@
 	}
 
 	/**
+	 * Add nav click handlers for a DOM subtree
+	 */
+	function addNavClickHandlers(p, force) {
+		if (!force && p.getAttribute('data-has-nav-click-handler') == "true") {
+			return;
+		}
+
+		p.setAttribute('data-has-nav-click-handler', 'true');
+
+		for (let a of p.querySelectorAll('a[data-pageref="true"]')) {
+			a.addEventListener('click', onNavClick);
+		}
+	}
+
+	/**
 	 * When a nav button is clicked
 	 */
 	function onNavClick(ev) {
 		let button = ev.currentTarget;
 
-		let page = button.getAttribute('data-page');
-
+		let page = button.getAttribute('href');
+		
 		if (page === null || page === '') {
-			alert("data-page not defined for anchor #" + button.id);
+			alert("href not defined for anchor #" + button.id);
 			return;
 		}
 
-		showOrCache(page);
+		showOrCache(page.substr(1));
 
 		ev.preventDefault();
 	}
@@ -166,9 +185,8 @@
 		qs("#nojs-site").classList.add("hidden");
 		qs("#js-site").classList.remove("hidden");
 
-		for (let button of qsa('.nav-button')) {
-			button.addEventListener('click', onNavClick);
-		}
+		// Add nav click handlers
+		addNavClickHandlers(qs("#nav"));
 
 		showInitialPage();
 	}
