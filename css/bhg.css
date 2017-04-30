@@ -118,6 +118,7 @@ a:active, a:hover {
 
 #content {
 	margin-top: 2.5em;
+	text-shadow: 0 0 0.5em;
 }
 
 #nav {
@@ -126,6 +127,15 @@ a:active, a:hover {
 	font-size: 1.3em;
 	line-height: 1.1em;
 	font-family: "PetMe64Medium", "Roboto Mono", monospace;
+}
+
+#nav > a {
+	text-shadow: 0 0 0.5em;
+}
+
+#nav > a.current {
+	text-shadow: inherit;
+	box-shadow: 0px 0px 20px 0px rgba(0,255,0,0.45);
 }
 
 #nav a:link, #nav a:visited {
@@ -138,11 +148,12 @@ a:active, a:hover {
 }
 
 #nav a.current {
-	color: black;
+	color: rgba(0,70,0,1);
 	background-color: rgba(0,255,0,0.8);
 }
 
-#nav a.current:hover {
-	color: black;
+#nav a.current:active, #nav a.current:hover {
+	color: rgba(70,70,0,1);
 	background-color: rgba(255,255,0,1);
+	box-shadow: 0px 0px 20px 0px rgba(255,255,0,0.65);
 }

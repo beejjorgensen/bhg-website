@@ -1,8 +1,6 @@
 # Bend Hackers Guild Website
 
 ## TODO
-* Glow to nav text
-* Glow to all text
 * Main page
 	* Library
 	* Meetup
