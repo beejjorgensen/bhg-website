@@ -1,0 +1,12 @@
+#cal-copy {
+	margin: 2em 2em 1em 2em;
+	text-align: center;
+}
+
+#cal-cal {
+	text-align: center;
+}
+
+#cal-cal > iframe {
+	max-width: 100%
+}

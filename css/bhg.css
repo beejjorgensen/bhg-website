@@ -82,6 +82,14 @@ body {
 	text-transform: uppercase;
 }
 
+a:link, a:visited {
+	color: rgba(0,255,0,0.8);
+}
+
+a:active, a:hover {
+	color: rgba(255,255,0,1);
+}
+
 #header {
 	margin-top: 2em;
 	text-align: center;
