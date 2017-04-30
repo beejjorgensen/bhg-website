@@ -76,6 +76,34 @@
 	}
 
 	/**
+	 * Set nav highlights
+	 */
+	function highlightNav(page) {
+		for (let a of qs('#nav').querySelectorAll('a')) {
+			let pageRef = a.getAttribute('data-page');
+
+			if (pageRef == page) {
+				a.classList.add('current');
+			} else {
+				a.classList.remove('current');
+			}
+		}
+	}
+
+	/**
+	 * Show or cache a page
+	 */
+	function showOrCache(page) {
+		if (pageCached.hasOwnProperty(page)) {
+			showPage(page);
+		} else {
+			cachePage(page);
+		}
+
+		highlightNav(page);
+	}
+
+	/**
 	 * When a nav button is clicked
 	 */
 	function onNavClick(ev) {
@@ -88,11 +116,7 @@
 			return;
 		}
 
-		if (pageCached.hasOwnProperty(page)) {
-			showPage(page);
-		} else {
-			cachePage(page);
-		}
+		showOrCache(page);
 
 		ev.preventDefault();
 	}
@@ -108,6 +132,8 @@
 		for (let button of qsa('.nav-button')) {
 			button.addEventListener('click', onNavClick);
 		}
+
+		showOrCache('page-main');
 	}
 
 	window.addEventListener('DOMContentLoaded', onReady);
