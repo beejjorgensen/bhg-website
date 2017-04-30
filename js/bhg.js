@@ -1,6 +1,8 @@
 ;(function () {
 	"use strict";
 
+	const MAINPAGE = 'page-main';
+
 	let pageCached = {};
 
 	/**
@@ -45,6 +47,7 @@
 
 				} else {
 					alert("Error loading page " + page + ": " + xhr.status + " " + xhr.statusText);
+					showPage(MAINPAGE);
 				}
 
 				showLoading(false);
@@ -59,11 +62,12 @@
 		xhr.open('GET', url);
     	xhr.send();
 
+		showPage(null);
 		showLoading(true);
 	}
 
 	/**
-	 * Shows an already-cached page
+	 * Shows an already-cached page, or pass null to simply hide pages
 	 */
 	function showPage(page) {
 		let title;
@@ -77,7 +81,9 @@
 			}
 		}
 
-		history.replaceState({}, title, '#' + page);
+		if (page !== null) {
+			history.replaceState({}, title, '#' + page);
+		}
 	}
 
 	/**
@@ -143,12 +149,11 @@
 
 			// Verify this page exists, else redirect to main
 			if (!qs('#content > div#' + page + ".page")) {
-				page = 'page-main';
+				page = MAINPAGE;
 			}
 		} else {
-			page = 'page-main';
+			page = MAINPAGE;
 		}
-
 
 		showOrCache(page);
 	}
