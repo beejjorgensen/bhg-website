@@ -93,12 +93,18 @@
 		} else {
 			cachePage(page);
 		}
+
+		ev.preventDefault();
 	}
 
 	/**
 	 * On DOM ready
 	 */
 	function onReady() {
+		// We have JS enabled, so remove the hassle screen
+		qs("#nojs-site").classList.add("hidden");
+		qs("#js-site").classList.remove("hidden");
+
 		for (let button of qsa('.nav-button')) {
 			button.addEventListener('click', onNavClick);
 		}

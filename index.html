@@ -9,23 +9,30 @@
 
 		<link rel="stylesheet" type="text/css" href="css/bhg.css">
 		<script type="text/javascript" src="js/bhg.js"></script>
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
 	</head>
 
 	<body>
-		<div id="header">Bend Hackers Guild</div>
+		<div id="header" class="font64">Bend Hackers Guild</div>
 
-		<div id="nav">
-			<a href="#" id="nav-home" class="nav-button" data-page="page-main">Home</a>
-			<a href="#" id="nav-home" class="nav-button" data-page="page-cal">Calendar</a>
+		<div id="nojs-site">
+			<div id="nojs" class="font64">Enable JavaScript! Gooble Gobble! One of us! One of us!</div>
 		</div>
 
-		<div id="content">
-			<noscript>Turn on JavaScript! Gooble Gobble! One of us! One of us!</noscript>
-			
-			<div id="page-main" class="page hidden" data-url="pages/main.html"></div>
-			<div id="page-cal" class="page hidden" data-url="pages/cal.html"></div>
+		<div id="js-site" class="hidden">
+			<div id="nav">
+				<a href="#" id="nav-home" class="nav-button" data-page="page-main">Home</a>
+				<a href="#" id="nav-home" class="nav-button" data-page="page-cal">Calendar</a>
+			</div>
 
-			<div id="loading" class="hidden">Loading...</div>
+			<div id="content">
+				
+				<div id="page-main" class="page hidden" data-url="pages/main.html"></div>
+				<div id="page-cal" class="page hidden" data-url="pages/cal.html"></div>
+
+				<div id="loading" class="hidden">Loading...</div>
+			</div>
 		</div>
 	</body>
 </html>
