@@ -64,7 +64,7 @@
 
 		xhr.onreadystatechange = stateChange;
 		xhr.open('GET', url);
-    	xhr.send();
+		xhr.send();
 
 		showPage(null);
 		showLoading(true);
