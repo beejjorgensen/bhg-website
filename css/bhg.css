@@ -107,7 +107,13 @@ a:link, a:visited {
 	color: rgba(0,255,0,0.8);
 }
 
-a:hover, a:active {
+@media (hover) {
+	a:hover {
+		color: rgba(255,255,0,1);
+	}
+}
+
+a:active {
 	color: rgba(255,255,0,1);
 }
 
@@ -161,7 +167,13 @@ a:hover, a:active {
 	color: rgba(0,255,0,0.8);
 }
 
-#nav a:hover, #nav a:active {
+@media (hover) {
+	#nav a:hover {
+		color: rgba(255,255,0,1);
+	}
+}
+
+#nav a:active {
 	color: rgba(255,255,0,1);
 }
 
@@ -170,7 +182,15 @@ a:hover, a:active {
 	background-color: rgba(0,255,0,0.8);
 }
 
-#nav a.current:hover, #nav a.current:active {
+@media (hover) {
+	#nav a.current:hover {
+		color: rgba(70,70,0,1);
+		background-color: rgba(255,255,0,1);
+		box-shadow: 0px 0px 20px 0px rgba(255,255,0,0.65);
+	}
+}
+
+#nav a.current:active {
 	color: rgba(70,70,0,1);
 	background-color: rgba(255,255,0,1);
 	box-shadow: 0px 0px 20px 0px rgba(255,255,0,0.65);
