@@ -107,7 +107,7 @@ a:link, a:visited {
 	color: rgba(0,255,0,0.8);
 }
 
-a:active, a:hover {
+a:hover, a:active {
 	color: rgba(255,255,0,1);
 }
 
@@ -161,7 +161,7 @@ a:active, a:hover {
 	color: rgba(0,255,0,0.8);
 }
 
-#nav a:active, #nav a:hover {
+#nav a:hover, #nav a:active {
 	color: rgba(255,255,0,1);
 }
 
@@ -170,7 +170,7 @@ a:active, a:hover {
 	background-color: rgba(0,255,0,0.8);
 }
 
-#nav a.current:active, #nav a.current:hover {
+#nav a.current:hover, #nav a.current:active {
 	color: rgba(70,70,0,1);
 	background-color: rgba(255,255,0,1);
 	box-shadow: 0px 0px 20px 0px rgba(255,255,0,0.65);
