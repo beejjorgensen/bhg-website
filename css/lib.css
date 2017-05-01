@@ -4,5 +4,16 @@
 }
 
 #librarika-widget {
-	max-width: 96%;
+	float: right;
+}
+
+@media (max-width:620px) {
+	#librarika-widget {
+		float: inherit;
+		text-align: center;
+	}
+
+	#lib-member-howto {
+		clear: both;
+	}
 }

@@ -91,6 +91,10 @@ body {
 	text-align: center;
 }
 
+.clear-both {
+	clear: both;
+}
+
 b {
 	font-weight: bold;
 }
