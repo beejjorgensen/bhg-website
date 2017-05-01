@@ -1,24 +1,85 @@
 <div id="page-lib-inner" class="std-inner">
 	<h1>Library</h1>
 
-	Bend Hackers Guild has a library of books maintained by our members. Each
-	member has their own "branch" and handles their own checkouts.
+	Bend Hackers Guild has a library of physical books maintained by our
+	members. Everyone's free to borrow books. Each "librarian" has their own
+	"branch" and handles their own checkouts.
+
+	<p class="text-center"><iframe id="librarika-widget" src="https://bhg.librarika.com/widgets/search/horizontal" width="468" height="150" marginwidth="0" marginheight="0" align="top" scrolling="No" frameborder="0" hspace="0" vspace="0"></iframe>
 
 
-	<h2>How to Check Out Books</h2>
+	<h2>How to Become a Member (i.e. how to get a "library card")</h2>
 
-	First, make a new account (or just log in with Facebook):
-	<ul><li><a href="https://librarika.com/users/register">https://librarika.com/users/register</a></li></ul>
+	<ol>
+		<li>Make a new account (or just log in with Facebook):
+		<ul><li><a href="https://librarika.com/users/register">https://librarika.com/users/register</a></li></ul>
 
-	<p>Second, visit our library page and browse:
-	<ul><li><a href="https://bhg.librarika.com/">https://bhg.librarika.com/</a></li></ul>
+		<li>Visit our library page:
+		<ul><li><a href="https://bhg.librarika.com/">https://bhg.librarika.com/</a></li></ul>
 
-	<p>When you've selected a book, Josh will tell me how to finish these instructions.
+		<li>Try to log in. You will get a "Forbidden" message. Don't fret.
+
+		<li>Click the "Request Member Access" button.
+
+		<li>Eagerly await approval.
+	</ol>
 
 
-	<h2>How to Open Your Own Branch</h2>
+	<h2>How to Check Out a Book</h2>
+	<ol>
+		<li>Visit our library page:
+		<ul><li><a href="https://bhg.librarika.com/">https://bhg.librarika.com/</a></li></ul>
+
+		<li>Search for a book with "Catalog Search" or browse with "Top Collections".
+
+		<li>When you've selected a book, scroll down and click "Request", select your requested dates, then "Submit".
+
+		<li>Await email from the branch owner letting you know where and when to get the book.
+
+		<li>The librarian will hand you the book and change the book's status to "Checked Out".
+	</ol>
+
+
+	<h2>How to Check In a Book</h2>
+	<ol>
+		<li>Physically return the book to the librarian from whom you borrowed it. The librarian will change the book's status to "Checked In".
+
+		<li>If you got to this step, you must have an overdue book. Please return it. :)
+	</ol>
+
+
+	<h2>How to Open Your Own Branch (admin)</h2>
 
 	If you have books you're willing to loan, you can start your own branch.
 	Contact <a href="mailto:beej@beej.us">beej@beej.us</a>.
+
+	<p>Optionally, you can also add an owner tag to your book (so we know to
+	whom to return it eventually) and hand it over to an existing librarian to
+	manage for you. Of course, this means you'll have to check out your own book
+	if you want to read it.
+
+
+	<h2>How to Manage Circulation (admin)</h2>
+
+	From the Admin menu, select Circulation→Circulation.
+
+	<p>Books are one of three states:
+
+	<ul>
+		<li><b>Requested</b>: The user requested a book. Not yet reserved. Click "Issue" to reserve.
+		<li><b>Reserved</b>: The book is reserved for a user for the requested dates. Click "Check Out" to check out when you phyically hand the book over.
+		<li><b>Checked out</b>: The user physically has the book. When the user physically hands the book back, click "Check In".
+		<li><b>Checked in</b>: The unrequested, unreserved book is at home on your shelf.
+	</ul>
+
+
+	<h2>Email (admin)</h2>
+
+	All librarians get a mail when someone requests a book. We currently don't
+	know how to restrict this to per-branch.
+	
+	<p>If you think it might be one of your books, log in and manage circulation
+	(above). Make sure it was requested from your branch. If so, proceed. If
+	not, ignore.
 
 </div>
