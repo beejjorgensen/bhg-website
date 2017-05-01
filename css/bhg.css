@@ -107,7 +107,7 @@ a:link, a:visited {
 	color: rgba(0,255,0,0.8);
 }
 
-@media (hover) {
+@media (hover:hover) {
 	a:hover {
 		color: rgba(255,255,0,1);
 	}
@@ -167,7 +167,7 @@ a:active {
 	color: rgba(0,255,0,0.8);
 }
 
-@media (hover) {
+@media (hover:hover) {
 	#nav a:hover {
 		color: rgba(255,255,0,1);
 	}
@@ -182,7 +182,7 @@ a:active {
 	background-color: rgba(0,255,0,0.8);
 }
 
-@media (hover) {
+@media (hover:hover) {
 	#nav a.current:hover {
 		color: rgba(70,70,0,1);
 		background-color: rgba(255,255,0,1);
