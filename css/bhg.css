@@ -99,6 +99,10 @@ b {
 	font-weight: bold;
 }
 
+i {
+	font-style: italic;
+}
+
 a:link, a:visited {
 	color: rgba(0,255,0,0.8);
 }
