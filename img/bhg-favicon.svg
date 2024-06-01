@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="100"
+   height="100"
+   id="svg27"
+   sodipodi:docname="bgc-triangle.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   inkscape:export-filename="foo.png"
+   inkscape:export-xdpi="491.51999"
+   inkscape:export-ydpi="491.51999"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs27">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Blur"
+       id="filter6"
+       x="-0.032102105"
+       y="-0.037068318"
+       width="1.0642042"
+       height="1.0741366">
+      <feGaussianBlur
+         stdDeviation="1 1"
+         result="blur"
+         id="feGaussianBlur6" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="namedview27"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.6902569"
+     inkscape:cx="-12.266487"
+     inkscape:cy="120.24874"
+     inkscape:window-width="1642"
+     inkscape:window-height="1254"
+     inkscape:window-x="625"
+     inkscape:window-y="119"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg27" />
+  <rect
+     style="fill:#000000;fill-opacity:1;stroke-width:0.607812"
+     id="rect27"
+     width="100"
+     height="100"
+     x="-100"
+     y="0"
+     transform="scale(-1,1)" />
+  <g
+     id="g1"
+     style="filter:url(#filter6)"
+     transform="matrix(1.2348787,0,0,1.2348787,-11.743935,6.2364605)">
+    <polygon
+       points="12.5,64.949365 37.5,64.949365 25,43.29873 "
+       fill="#008000"
+       id="polygon1-9"
+       transform="matrix(0.74761452,0,0,0.74761452,12.619274,3.0687868)"
+       style="fill:#ffbf00;fill-opacity:1" />
+    <polygon
+       points="25,86.6 12.5,64.949365 0,86.6 "
+       fill="#008000"
+       id="polygon2-2"
+       transform="matrix(0.74761452,0,0,0.74761452,12.619274,3.0687868)"
+       style="fill:#ffbf00;fill-opacity:1" />
+    <polygon
+       points="37.5,64.949365 25,86.6 50,86.6 "
+       fill="#008000"
+       id="polygon3-6"
+       transform="matrix(0.74761452,0,0,0.74761452,12.619274,3.0687868)"
+       style="fill:#ffbf00;fill-opacity:1" />
+    <polygon
+       points="75,86.6 62.5,64.949365 50,86.6 "
+       fill="#008000"
+       id="polygon4-6"
+       transform="matrix(0.74761452,0,0,0.74761452,12.619274,3.0687868)"
+       style="fill:#ffbf00;fill-opacity:1" />
+    <polygon
+       points="87.5,64.949365 75,86.6 100,86.6 "
+       fill="#008000"
+       id="polygon5-4"
+       transform="matrix(0.74761452,0,0,0.74761452,12.619274,3.0687868)"
+       style="fill:#ffbf00;fill-opacity:1" />
+    <polygon
+       points="62.5,64.949365 87.5,64.949365 75,43.29873 "
+       fill="#008000"
+       id="polygon6-9"
+       transform="matrix(0.74761452,0,0,0.74761452,12.619274,3.0687868)"
+       style="fill:#ffbf00;fill-opacity:1" />
+    <polygon
+       points="62.5,21.648095 50,43.29873 75,43.29873 "
+       fill="#008000"
+       id="polygon7-5"
+       transform="matrix(0.74761452,0,0,0.74761452,12.619274,3.0687868)"
+       style="fill:#ffbf00;fill-opacity:1" />
+    <polygon
+       points="37.5,21.648095 62.5,21.648095 50,-0.0025403784 "
+       fill="#008000"
+       id="polygon8-0"
+       transform="matrix(0.74761452,0,0,0.74761452,12.619274,3.0687868)"
+       style="fill:#ffbf00;fill-opacity:1" />
+    <polygon
+       points="50,43.29873 37.5,21.648095 25,43.29873 "
+       fill="#008000"
+       id="polygon9-4"
+       transform="matrix(0.74761452,0,0,0.74761452,12.619274,3.0687868)"
+       style="fill:#ffbf00;fill-opacity:1" />
+  </g>
+</svg>
