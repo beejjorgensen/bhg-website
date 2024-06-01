@@ -54,11 +54,39 @@ table {
 
 /* Thanks for this awesome font * http://www.kreativekorp.com/software/fonts/c64.shtml */
 
+html {
+    /* Green */
+    /*
+    --main-color: rgba(0,255,0,0.8);
+	--link-color: var(--main-color);
+	--hover-color: rgba(255,255,0,1);
+    --nav-link: rgba(0,255,0,0.8);
+    --nav-current-shadow: rgba(0,255,0,0.45);
+    --nav-current-color: rgba(0,70,0,1);
+	--nav-current-background-color: rgba(0,255,0,0.8);
+	--nav-current-hover-color: rgba(70,70,0,1);
+	--nav-current-hover-background-color: rgba(255,255,0,1);
+    --nav-current-hover-shadow: rgba(255,255,0,0.65);
+    */
+
+    /* Off-white */
+    --main-color: rgba(240,240,240,0.8);
+	--link-color: var(--main-color);
+	--hover-color: rgba(255,255,255,1);
+    --nav-link: rgba(255,255,255,0.8);
+    --nav-current-shadow: rgba(255,255,255,0.45);
+    --nav-current-color: rgba(50,50,50,1);
+	--nav-current-background-color: rgba(240,240,0,0.8);
+	--nav-current-hover-color: rgba(70,70,0,1);
+	--nav-current-hover-background-color: rgba(255,255,0,1);
+    --nav-current-hover-shadow: rgba(255,255,0,0.65);
+}
+
 body {
 	background-image: url('../img/scanlines.png');
 	background-attachment: fixed;
-	font-family: "Roboto Mono", monospace;
-	color: rgba(0,255,0,0.8);
+	font-family: monospace;
+	color: var(--main-color);
 	overflow-y: scroll; /* force scrollbar on */
 }
 
@@ -104,17 +132,17 @@ i {
 }
 
 a:link, a:visited {
-	color: rgba(0,255,0,0.8);
+	color: var(--link-color);
 }
 
 @media (hover:hover) {
 	a:hover {
-		color: rgba(255,255,0,1);
+		color: var(--hover-color);
 	}
 }
 
 a:active {
-	color: rgba(255,255,0,1);
+	color: var(--hover-color);
 }
 
 #header {
@@ -159,41 +187,41 @@ a:active {
 
 #nav > a.current {
 	text-shadow: inherit;
-	box-shadow: 0px 0px 20px 0px rgba(0,255,0,0.45);
+	box-shadow: 0px 0px 20px 0px var(--nav-current-shadow)
 }
 
 #nav a:link, #nav a:visited {
 	text-decoration: none;
-	color: rgba(0,255,0,0.8);
+	color: var(--nav-link);
 }
 
 @media (hover:hover) {
 	#nav a:hover {
-		color: rgba(255,255,0,1);
+		color: var(--hover-color);
 	}
 }
 
 #nav a:active {
-	color: rgba(255,255,0,1);
+	color: var(--hover-color);
 }
 
 #nav a.current {
-	color: rgba(0,70,0,1);
-	background-color: rgba(0,255,0,0.8);
+	color: var(--nav-current-color);
+	background-color: var(--nav-current-background-color);
 }
 
 @media (hover:hover) {
 	#nav a.current:hover {
-		color: rgba(70,70,0,1);
-		background-color: rgba(255,255,0,1);
-		box-shadow: 0px 0px 20px 0px rgba(255,255,0,0.65);
+		color: var(--nav-current-hover-color);
+		background-color: var(--nav-current-hover-background-color);
+		box-shadow: 0px 0px 20px 0px var(--nav-current-hover-shadow);
 	}
 }
 
 #nav a.current:active {
-	color: rgba(70,70,0,1);
-	background-color: rgba(255,255,0,1);
-	box-shadow: 0px 0px 20px 0px rgba(255,255,0,0.65);
+    color: var(--nav-current-hover-color);
+    background-color: var(--nav-current-hover-background-color);
+    box-shadow: 0px 0px 20px 0px var(--nav-current-hover-shadow);
 }
 
 .std-inner {
