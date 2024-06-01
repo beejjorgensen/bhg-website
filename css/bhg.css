@@ -107,7 +107,7 @@ body {
 }
 
 .font64 {
-	font-family: "PetMe64Medium", "Roboto Mono", monospace;
+	font-family: "PetMe64Medium", monospace;
 	text-transform: uppercase;
 }
 
@@ -178,7 +178,7 @@ a:active {
 	text-align: center;
 	font-size: 1.3em;
 	line-height: 1.1em;
-	font-family: "PetMe64Medium", "Roboto Mono", monospace;
+	font-family: "PetMe64Medium", monospace;
 }
 
 #nav > a {
