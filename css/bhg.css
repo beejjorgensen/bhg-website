@@ -16,35 +16,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* End of Meyer reset */
@@ -58,36 +58,36 @@ html {
     /* Green */
     /*
     --main-color: rgba(0,255,0,0.8);
-	--link-color: var(--main-color);
-	--hover-color: rgba(255,255,0,1);
+    --link-color: var(--main-color);
+    --hover-color: rgba(255,255,0,1);
     --nav-link: rgba(0,255,0,0.8);
     --nav-current-shadow: rgba(0,255,0,0.45);
     --nav-current-color: rgba(0,70,0,1);
-	--nav-current-background-color: rgba(0,255,0,0.8);
-	--nav-current-hover-color: rgba(70,70,0,1);
-	--nav-current-hover-background-color: rgba(255,255,0,1);
+    --nav-current-background-color: rgba(0,255,0,0.8);
+    --nav-current-hover-color: rgba(70,70,0,1);
+    --nav-current-hover-background-color: rgba(255,255,0,1);
     --nav-current-hover-shadow: rgba(255,255,0,0.65);
     */
 
     /* Off-white */
     --main-color: rgba(240,240,240,0.8);
-	--link-color: var(--main-color);
-	--hover-color: rgba(255,255,255,1);
+    --link-color: var(--main-color);
+    --hover-color: rgba(255,255,255,1);
     --nav-link: rgba(255,255,255,0.8);
     --nav-current-shadow: rgba(255,255,255,0.45);
     --nav-current-color: rgba(50,50,50,1);
-	--nav-current-background-color: rgba(240,240,0,0.8);
-	--nav-current-hover-color: rgba(70,70,0,1);
-	--nav-current-hover-background-color: rgba(255,255,0,1);
+    --nav-current-background-color: rgba(240,240,0,0.8);
+    --nav-current-hover-color: rgba(70,70,0,1);
+    --nav-current-hover-background-color: rgba(255,255,0,1);
     --nav-current-hover-shadow: rgba(255,255,0,0.65);
 }
 
 body {
-	background-image: url('../img/scanlines.png');
-	background-attachment: fixed;
-	font-family: monospace;
-	color: var(--main-color);
-	overflow-y: scroll; /* force scrollbar on */
+    background-image: url('../img/scanlines.png');
+    background-attachment: fixed;
+    font-family: monospace;
+    color: var(--main-color);
+    overflow-y: scroll; /* force scrollbar on */
 }
 
 @font-face {
@@ -103,119 +103,119 @@ body {
 }   
 
 .hidden {
-	display: none;
+    display: none;
 }
 
 .font64 {
-	font-family: "PetMe64Medium", monospace;
-	text-transform: uppercase;
+    font-family: "PetMe64Medium", monospace;
+    text-transform: uppercase;
 }
 
 .hide-whitespace {
-	font-size: 0;
+    font-size: 0;
 }
 
 .text-center {
-	text-align: center;
+    text-align: center;
 }
 
 .clear-both {
-	clear: both;
+    clear: both;
 }
 
 b {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 i {
-	font-style: italic;
+    font-style: italic;
 }
 
 a:link, a:visited {
-	color: var(--link-color);
+    color: var(--link-color);
 }
 
 @media (hover:hover) {
-	a:hover {
-		color: var(--hover-color);
-	}
+    a:hover {
+        color: var(--hover-color);
+    }
 }
 
 a:active {
-	color: var(--hover-color);
+    color: var(--hover-color);
 }
 
 #header {
-	margin-top: 2em;
-	text-align: center;
-	font-size: 2em;
-	text-shadow: 0 0 1.3em;
+    margin-top: 2em;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 0 0 1.3em;
 }
 
 #nojs {
-	margin-top: 4em;
-	text-align: center;
-	font-size: 1.5em;
-	text-shadow: 0 0 0.8em;
-	text-decoration: blink;
+    margin-top: 4em;
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 0 0 0.8em;
+    text-decoration: blink;
 }
 
 #loading {
-	text-align: center;
-	margin-top: 5em;
-	font-size: 1.4em;
+    text-align: center;
+    margin-top: 5em;
+    font-size: 1.4em;
 }
 
 #content {
-	margin-top: 2.5em;
-	margin-bottom: 4em;
-	text-shadow: 0 0 0.5em;
-	line-height: 1.3em;
+    margin-top: 2.5em;
+    margin-bottom: 4em;
+    text-shadow: 0 0 0.5em;
+    line-height: 1.3em;
 }
 
 #nav {
-	margin-top: 2em;
-	text-align: center;
-	font-size: 1.3em;
-	line-height: 1.1em;
-	font-family: "PetMe64Medium", monospace;
+    margin-top: 2em;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1.1em;
+    font-family: "PetMe64Medium", monospace;
 }
 
 #nav > a {
-	text-shadow: 0 0 0.5em;
+    text-shadow: 0 0 0.5em;
 }
 
 #nav > a.current {
-	text-shadow: inherit;
-	box-shadow: 0px 0px 20px 0px var(--nav-current-shadow)
+    text-shadow: inherit;
+    box-shadow: 0px 0px 20px 0px var(--nav-current-shadow)
 }
 
 #nav a:link, #nav a:visited {
-	text-decoration: none;
-	color: var(--nav-link);
+    text-decoration: none;
+    color: var(--nav-link);
 }
 
 @media (hover:hover) {
-	#nav a:hover {
-		color: var(--hover-color);
-	}
+    #nav a:hover {
+        color: var(--hover-color);
+    }
 }
 
 #nav a:active {
-	color: var(--hover-color);
+    color: var(--hover-color);
 }
 
 #nav a.current {
-	color: var(--nav-current-color);
-	background-color: var(--nav-current-background-color);
+    color: var(--nav-current-color);
+    background-color: var(--nav-current-background-color);
 }
 
 @media (hover:hover) {
-	#nav a.current:hover {
-		color: var(--nav-current-hover-color);
-		background-color: var(--nav-current-hover-background-color);
-		box-shadow: 0px 0px 20px 0px var(--nav-current-hover-shadow);
-	}
+    #nav a.current:hover {
+        color: var(--nav-current-hover-color);
+        background-color: var(--nav-current-hover-background-color);
+        box-shadow: 0px 0px 20px 0px var(--nav-current-hover-shadow);
+    }
 }
 
 #nav a.current:active {
@@ -225,40 +225,44 @@ a:active {
 }
 
 .std-inner {
-	text-align: left;
-	max-width: 800px;
-	display: inline-block;
+    text-align: left;
+    max-width: 800px;
+    display: inline-block;
 }
 
 h1 {
-	margin: 0 0 1em 0;
-	font-size: 1.4em;
-	font-weight: bold;
+    margin: 0 0 1em 0;
+    font-size: 1.4em;
+    font-weight: bold;
 }
 
 h2 {
-	margin: 1.5em 0 1em 0;
-	font-size: 1.2em;
-	font-weight: bold;
+    margin: 1.5em 0 1em 0;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 p {
-	margin-top: 1em;
+    margin-top: 1em;
 }
 
 ul > li {
-	list-style-type: square;
+    list-style-type: square;
 }
 
 ol > li {
-	list-style-type: decimal;
+    list-style-type: decimal;
 }
 
 li {
-	margin-left: 3em;
-	margin-top: 1em;
+    margin-left: 3em;
+    margin-top: 1em;
 }
 
 li:first-child {
-	margin-top: 0;
+    margin-top: 0;
+}
+
+.page {
+    font-size: 1.2em;
 }
