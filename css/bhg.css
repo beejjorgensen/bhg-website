@@ -116,14 +116,14 @@ a:active {
     margin-top: 2.5em;
     margin-bottom: 4em;
     text-shadow: 0 0 0.5em;
-    line-height: 1.3em;
 }
 
 #nav {
     margin-top: 2em;
+    margin-bottom: 1.8em;
     text-align: center;
     font-size: 1.3em;
-    line-height: 1.1em;
+    line-height: 1.2em;
     font-family: "PetMe64Medium", monospace;
 }
 
@@ -180,14 +180,12 @@ h1 {
     margin: 0 0 1em 0;
     font-size: 1.4em;
     font-weight: bold;
-    line-height: 1em;
 }
 
 h2 {
     margin: 1.5em 0 1em 0;
     font-size: 1.2em;
     font-weight: bold;
-    line-height: 1em;
 }
 
 p {
