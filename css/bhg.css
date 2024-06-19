@@ -26,6 +26,16 @@ html {
     --nav-current-hover-shadow: rgba(255,255,0,0.65);
 }
 
+img.pyramid {
+    width: 80px;
+    height: 60px;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    image-rendering: -o-crisp-edges; /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (Safari/Chrome) */
+    image-rendering: crisp-edges;
+}
+
 body {
     background-image: url('../img/scanlines.png');
     background-attachment: fixed;
@@ -92,6 +102,9 @@ a:active {
 }
 
 #header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Optional: centers items horizontally as well */
     margin-top: 2em;
     text-align: center;
     font-size: 2em;
